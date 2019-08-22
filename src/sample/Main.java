@@ -6,7 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import sample.Data;
+import sample.Data;;
 
 
 import java.io.IOException;
