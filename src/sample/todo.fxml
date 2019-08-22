@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TodoController">
+<content>
+    <Pane prefHeight="345.0" prefWidth="766.0">
+        <children>
+            <ImageView fitHeight="441.0" fitWidth="858.0" layoutX="-8.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@spider.jpg" />
+                </image>
+            </ImageView>
+            <TextField fx:id="shortDescriptionField" layoutX="103.0" layoutY="57.0" prefHeight="25.0" prefWidth="249.0" />
+            <TextArea fx:id="detailsArea" layoutX="103.0" layoutY="101.0" prefHeight="200.0" prefWidth="251.0" />
+            <DatePicker fx:id="deadlinePicker" layoutX="103.0" layoutY="317.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label layoutX="13.0" layoutY="56.0" text="Note Title" textFill="#e82cbf">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="101.0" text="Details" textFill="#f2439a">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="316.0" prefHeight="27.0" prefWidth="56.0" text="  Date" textFill="#e84f4f">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </Label>
+            <ButtonBar layoutX="159.0" layoutY="361.0" prefHeight="40.0" prefWidth="102.0" />
+            <Button fx:id="clickbtn" layoutX="261.0" layoutY="360.0" mnemonicParsing="false" onAction="#closeButtonAction" style="-fx-background-color: blue;" text="Home" textFill="#fcf8f8" />
+            <Button fx:id="addbtn" layoutX="122.0" layoutY="360.0" mnemonicParsing="false" onAction="#processResults" prefHeight="25.0" prefWidth="61.0" style="-fx-background-color: purple;" text="Add" textFill="#f7fcfa" />
+        </children>
+    </Pane>
+</content>
+</DialogPane>
